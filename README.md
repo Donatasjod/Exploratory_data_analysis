@@ -1,114 +1,35 @@
-## Introduction
-
-This assignment uses data from
-the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
-Learning Repository</a>, a popular repository for machine learning
-datasets. In particular, we will be using the "Individual household
-electric power consumption Data Set" which I have made available on
-the course web site:
 
 
-* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
-
-* <b>Description</b>: Measurements of electric power consumption in
-one household with a one-minute sampling rate over a period of almost
-4 years. Different electrical quantities and some sub-metering values
-are available.
-
-
-The following descriptions of the 9 variables in the dataset are taken
-from
-the <a href="https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">UCI
-web site</a>:
-
-<ol>
-<li><b>Date</b>: Date in format dd/mm/yyyy </li>
-<li><b>Time</b>: time in format hh:mm:ss </li>
-<li><b>Global_active_power</b>: household global minute-averaged active power (in kilowatt) </li>
-<li><b>Global_reactive_power</b>: household global minute-averaged reactive power (in kilowatt) </li>
-<li><b>Voltage</b>: minute-averaged voltage (in volt) </li>
-<li><b>Global_intensity</b>: household global minute-averaged current intensity (in ampere) </li>
-<li><b>Sub_metering_1</b>: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered). </li>
-<li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
-<li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
-</ol>
-
-## Loading the data
-
-
-
-
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
-
-* Note that in this dataset missing values are coded as `?`.
-
-
-## Making Plots
-
-Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. Your task is to
-reconstruct the following plots below, all of which were constructed
-using the base plotting system.
-
-First you will need to fork and clone the following GitHub repository:
-[https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
-
-
-For each plot you should
-
-* Construct the plot and save it to a PNG file with a width of 480
-pixels and a height of 480 pixels.
-
-* Name each of the plot files as `plot1.png`, `plot2.png`, etc.
-
-* Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
-constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
-
-* Add the PNG file and R code file to your git repository
-
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
-
-
-The four plots that you will need to construct are shown below. 
-
-
-### Plot 1
-
-
-![plot of chunk unnamed-chunk-2]( https://d396qusza40orc.cloudfront.net/exdata/CP1/ExDataCP1Plot1.png ) 
-
-
-### Plot 2
-
-![plot of chunk unnamed-chunk-3](https://d396qusza40orc.cloudfront.net/exdata/CP1/ExDataCP1Plot2.png) 
-
-
-### Plot 3
-
-![plot of chunk unnamed-chunk-4](https://d396qusza40orc.cloudfront.net/exdata/CP1/ExDataCP1Plot3.png) 
-
-
-### Plot 4
-
-![plot of chunk unnamed-chunk-5](https://d396qusza40orc.cloudfront.net/exdata/CP1/ExDataCP1Plot4.png) 
-
+<h2>Exploratory Data Analysis</h2>
+<p><a href="http://www.biostat.jhsph.edu/~rpeng/">Roger D. Peng</a> </p>
+<hr /><h2>Course Description</h2>
+<p>This course covers the essential exploratory techniques for summarizing data. These techniques are typically applied before formal modeling commences and can help inform the development of more complex statistical models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the world that can be addressed by the data. We will cover in detail the plotting systems in R as well as some of the basic principles of constructing data graphics. We will also cover some of the common multivariate statistical techniques used to visualize high-dimensional data.</p>
+<hr /><h2>Course Content</h2>
+<ul><li>Making exploratory graphs</li>
+<li>Principles of analytic graphics</li>
+<li>Plotting systems and graphics devices in R</li>
+<li>The base, lattice, and ggplot2 plotting systems in R</li>
+<li>Clustering methods</li>
+<li>Dimension reduction techniques</li>
+</ul><hr /><h2>Lecture Materials</h2>
+<p>Lecture videos will be released weekly and will be available for the week and thereafter. You are welcome to view them at your convenience. Accompanying each video lecture will be a PDF copy of the slides and a link to an HTML5 version of the slides. </p>
+<h3>Course Textbook</h3>
+<p>The book <em><a href="https://leanpub.com/exdata">Exploratory Data Analysis with R</a></em> covers the lecture material in this course.</p>
+<hr /><h2>Assessments</h2>
+<h3>Quizzes</h3>
+<p>There will be two quizzes. The quizzes will open on the
+first day of the course. Quiz 1 is due at the end of the first week, and Quiz 2 is due at the end of the second week. Please refer to the individual Quizzes to see the exact
+date and time that each Quiz is due. Quizzes are accessed by clicking the Quizzes link in the left navigation bar.</p>
+<h3>Course Projects</h3>
+<p>The two course projects will be assessed via peer assessment. In
+these projects, you will be asked to construct or reproduce certain
+plots, the purpose of which is to make you familiar with various plotting options. You will be evaluated on the plot that you produce and the code
+that you write to construct the plot. Course projects evaluated via peer
+assessment will make use of your GitHub account. Course Projects are accessed by clicking the Course Projects link in the left navigation bar.</p>
+<h3>Points and Scoring</h3>
+<ul><li>Quiz 1: 20%</li>
+<li>Quiz 2: 20%</li>
+<li>Course Project 1: 25%</li>
+<li>Course Project 2: 35%</li>
+</ul><p>You must earn 70% to pass the course and earn a certificate. Students who earn 90% and above will receive a certificate with Distinction.</p>
+<hr />
